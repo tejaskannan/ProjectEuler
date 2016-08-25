@@ -9,7 +9,9 @@ public class Problem3 {
 		// Answer: 6857
 	}
 
-
+	/*
+	 * Gets a list of factors for the given number
+	 */
 	public static ArrayList<Long> getFactors(long n) {
 		ArrayList<Long> factors = new ArrayList<Long>();
 		long limit = (long) Math.sqrt(n);
@@ -24,6 +26,9 @@ public class Problem3 {
 
 	}
 
+	/*
+	 * Given the list of factors, the largest prime factor will be returned
+	 */
 	public static long largestPrimeFactor(ArrayList<Long> factors, long n) {
 		long largest = 1;
 		for (int i = 0; i < factors.size(); i++) {
@@ -35,6 +40,9 @@ public class Problem3 {
 		return largest;
 	}
 
+	/*
+	 * Computes whether the given number is prime
+	 */
 	public static boolean isPrime(long n) {
 		long limit = (long) Math.sqrt(n);
 
